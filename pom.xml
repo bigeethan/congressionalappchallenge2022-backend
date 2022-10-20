@@ -12,7 +12,7 @@
 	<artifactId>congressionalappchallenge</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>congressionalappchallenge</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Civics Web App for the Congressional App Challenge 2022</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -40,6 +40,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>17</source>
+					<target>17</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
