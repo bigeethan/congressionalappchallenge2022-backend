@@ -15,7 +15,7 @@ public class FirebaseInitialization {
         FileInputStream serviceAccount =
                 null;
         try {
-            serviceAccount = new FileInputStream("C:\\Users\\Ethan Friedman\\Desktop\\congressionalappchallenge (1)\\congressionalappchallenge\\appchallenge-5dbdf-firebase-adminsdk-1ymu0-33cb0387eb.json");
+            serviceAccount = new FileInputStream("C:\\Users\\Ethan Friedman\\Desktop\\congressionalappchallenge (1)\\appchallenge-5dbdf-firebase-adminsdk-1ymu0-33cb0387eb.json");
 
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
