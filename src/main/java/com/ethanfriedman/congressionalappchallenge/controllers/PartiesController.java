@@ -13,11 +13,13 @@ public class PartiesController {
     PartyService partyService;
 
     //Party endpoints
+    @CrossOrigin
     @GetMapping("/getparty/{name}")
     public Parties getParty(@PathVariable String name) throws ExecutionException, InterruptedException {
         return partyService.getParty(name);
     }
 
+    @CrossOrigin
     @PostMapping("/createparty")
     public String createParty(@RequestBody Parties parties) throws ExecutionException, InterruptedException {
         return partyService.saveParty(parties);
